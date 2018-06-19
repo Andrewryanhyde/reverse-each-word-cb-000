@@ -1,8 +1,7 @@
-def reverse_each_word(sentence)
-  reversed = ""
-  sentence.map do |letter|
-    l = sentence.shift
-    reversed.push(l)
+def reverse_each_word(array)
+  newArray = array.split(" ")
+  reversed = newArray.each do |word|
+    word.reverse!
   end
-  puts reversed
+  return reversed.join(" ")
 end
